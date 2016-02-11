@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2;
+package dip.lab3.student.solution1;
 
 /**
  *
  * @author Emilio
  */
-public interface ServiceQuality {
+public class StartUp {
     
 }

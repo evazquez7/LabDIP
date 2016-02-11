@@ -9,14 +9,13 @@ package dip.lab2;
  *
  * @author Emilio
  */
-public interface TipCalculator {
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
+public class TipService {
+    private TipCalculator tipCalculator;
+    
+    public double getTip(){ 
+        return tipCalculator.getTip();
     }
     
-     
-    public abstract double getTip();
+   
     
 }
-
-

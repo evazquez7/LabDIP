@@ -11,11 +11,8 @@ import dip.lab2.*;
  *
  * @author Emilio
  */
-public abstract class TipCalculator {
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    private ServiceQuality serviceQuality;
+public interface TipCalculator {
+    
      
     public abstract double getTip();
     

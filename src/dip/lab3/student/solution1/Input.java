@@ -9,6 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author Emilio
  */
-public class OutputFile {
-    
+public interface Input {
+    public abstract String inputText();
 }

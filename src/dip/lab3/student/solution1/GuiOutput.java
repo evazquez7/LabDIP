@@ -3,20 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2;
+package dip.lab3.student.solution1;
+
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Emilio
  */
-public interface TipCalculator {
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
-    
-     
-    public abstract double getTip();
-    
+public class GuiOutput {
+    public void writeln( String text ) {
+            JOptionPane.showMessageDialog(null, text);
+	}
 }
-
-

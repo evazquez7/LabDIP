@@ -9,6 +9,15 @@ package dip.lab3.student.solution1;
  *
  * @author Emilio
  */
-public class KeyboardInput {
+import java.util.Scanner;
+public class KeyboardInput implements Input{
+
+    @Override
+    public String inputText() {
+        System.out.println("input text");
+        
+        Scanner input = new Scanner(System.in);
+        return input.nextLine();
+    }
     
 }
