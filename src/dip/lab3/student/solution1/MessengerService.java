@@ -9,14 +9,17 @@ package dip.lab3.student.solution1;
  *
  * @author Emilio
  */
-public class Messenger {
+public class MessengerService {
     private Output output;
     private Input input;
     
-    public Messenger(Input input, Output output) {
+    public MessengerService(Input input, Output output) {
         this.input= input;
         this.output = output;
     }
     
-    
+    public final void sendMessage(){
+        String line =input.inputText();
+        output.OutputText(line);
+    }
 }

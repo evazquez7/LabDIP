@@ -11,8 +11,11 @@ import javax.swing.JOptionPane;
  *
  * @author Emilio
  */
-public class GuiOutput {
-    public void writeln( String text ) {
-            JOptionPane.showMessageDialog(null, text);
-	}
+public class GuiOutput implements Output {
+   
+
+    @Override
+    public void OutputText(String text) {
+         JOptionPane.showMessageDialog(null, text);
+    }
 }
