@@ -9,6 +9,12 @@ package dip.lab3.student.solution1;
  *
  * @author Emilio
  */
-public class ConsoleOutput {
+public class ConsoleOutput implements Output{
     
+    
+    @Override
+    public void OutputText( String line ) {
+            System.out.println("Here is the text you entered, which I've copied below.");
+            System.out.println( line );
+	}
 }
