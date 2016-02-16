@@ -9,13 +9,12 @@ package dip.lab3.student.solution1;
  *
  * @author Emilio
  */
-public class Messenger {
-    private Output output;
-    private Input input;
-    
-    public Messenger(Input input, Output output) {
-        this.input= input;
-        this.output = output;
+public class QuoteMessageInput implements Input{
+    private String quote = "We fly high, no lie, you know this (Ballin'!)";
+
+    @Override
+    public String inputText() {
+        return quote;
     }
     
 }
